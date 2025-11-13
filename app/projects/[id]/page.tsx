@@ -30,7 +30,7 @@ export default async function ProjectPage({
       {/* hero section */}
       <div className="relative w-full h-96 sm:h-[500px] bg-muted overflow-hidden">
         <Image
-          src={`/ppr-crowdfunding/reha-ppr${project.image}`}
+          src={`/ppr-crowdfunding/${project.image}`}
           alt={project.title}
           fill
           className="w-full h-full object-cover"
