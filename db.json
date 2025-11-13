@@ -93,7 +93,7 @@
     },
     {
       "id": "3",
-      "title": "Indieクックブック：世界の街角フード",
+      "title": "Indieクックブック：世界の街角フード（更新）",
       "description": "200以上の世界の街角フードレシピを掲載した美しくイラストされたクックブック",
       "story": "35カ国を旅して本格的な街角フードのレシピを集めました。このクックブックは世界の料理への愛の手紙です。",
       "image": "/beautiful-cookbook-street-food-vibrant-colors.jpg",
@@ -102,7 +102,7 @@
       "creator": "Yuki Suzuki",
       "goalAmount": 150000,
       "fundedAmount": 234000,
-      "backers": 68,
+      "backers": 70,
       "daysRemaining": 20,
       "rewards": [
         {

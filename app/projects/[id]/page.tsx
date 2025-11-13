@@ -6,12 +6,15 @@ import { fetchProjectById, fetchProjects } from "@/lib/api";
 import { Project } from "@/lib/types";
 import Image from "next/image";
 
+// export const dynamic = "force-dynamic";
+
 export const generateStaticParams = async () => {
   const projects = await fetchProjects();
   return projects.map((project: Project) => ({ id: project.id }));
 };
 
 const getProject = async (projectId: string) => {
+  "use cache"; // ← これを追加！
   return await fetchProjectById(projectId);
 };
 
