@@ -15,7 +15,7 @@ export function ProjectCard({ project }: { project: Project }) {
         {/* Project Image */}
         <div className="relative w-full h-48 bg-muted overflow-hidden">
           <Image
-            src={project.image || "/placeholder.svg"}
+            src={`/ppr-crowdfunding/reha-ppr${project.image}`}
             width={387}
             height={192}
             alt={project.title}
