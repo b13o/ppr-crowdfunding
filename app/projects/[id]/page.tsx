@@ -14,7 +14,6 @@ export const generateStaticParams = async () => {
 };
 
 const getProject = async (projectId: string) => {
-  "use cache"; // ← これを追加！
   return await fetchProjectById(projectId);
 };
 

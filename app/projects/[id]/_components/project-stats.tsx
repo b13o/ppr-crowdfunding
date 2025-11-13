@@ -1,16 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { LiveFundingStat } from "@/app/projects/[id]/_components/live-funding-stat";
 import type { Project } from "@/lib/types";
-import { Suspense } from "react";
-
-function StatsSkeleton() {
-  return (
-    <div className="space-y-4">
-      <div className="h-8 bg-border rounded-lg animate-pulse" />
-      <div className="h-4 bg-border rounded-lg animate-pulse w-3/4" />
-    </div>
-  );
-}
 
 export function ProjectStats({ project }: { project: Project }) {
   const fundingPercentage = Math.round(
@@ -39,9 +29,7 @@ export function ProjectStats({ project }: { project: Project }) {
 
         {/* Stats Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
-          <Suspense fallback={<StatsSkeleton />}>
-            <LiveFundingStat project={project} />
-          </Suspense>
+          <LiveFundingStat project={project} />
           <div>
             <div className="text-2xl sm:text-3xl font-bold text-destructive mb-1">
               {project.daysRemaining}
